@@ -1,0 +1,10 @@
+{
+	"A": {
+		"type": "integer",
+		"value": 0
+	},
+	"Name": {
+		"type": "string",
+		"value": "Test Entity"
+	}
+}

@@ -1,0 +1,121 @@
+{
+	"X": {
+		"type": "integer",
+		"value": 0
+	},
+	"Y": {
+		"type": "integer",
+		"value": 0
+	},
+	"Name": {
+		"type": "string",
+		"value": "Test Action Create Delete"
+	},
+	"Actions": {
+		"type": "table",
+		"value": [
+			{
+				"type": "table",
+				"class": "ActionDestroyAction",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "DestroyIncrementX"
+					},
+					"ActionToDelete": {
+						"type": "string",
+						"value": "ActionIncrementToBeDeleted"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"class": "ActionCreateAction",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "CreateIncrementY"
+					},
+					"ActionToCreate": {
+						"type": "string",
+						"value": "NewIncrementY"
+					},
+					"ClassName": {
+						"type": "string",
+						"value": "ActionIncrement"
+					},
+					"Target": {
+						"type": "string",
+						"value": "Y"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"class": "ActionIncrement",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "ActionIncrementToBeDeleted"
+					},
+					"Target": {
+						"type": "string",
+						"value": "X"
+					},
+					"Step": {
+						"type": "integer",
+						"value": 1
+					}
+				}
+			},
+			{
+				"type": "table",
+				"class": "ActionList",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Nested ActionList"
+					},
+					"Actions": {
+						"type": "table",
+						"class": "ActionList",
+						"value": [
+							{
+								"type": "table",
+								"class": "ActionDestroyAction",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "DestroyNestedIncrementX"
+									},
+									"ActionToDelete": {
+										"type": "string",
+										"value": "NestedActionIncrementToBeDeleted"
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "ActionIncrement",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "NestedActionIncrementToBeDeleted"
+									},
+									"Target": {
+										"type": "string",
+										"value": "X"
+									},
+									"Step": {
+										"type": "integer",
+										"value": 1
+									}
+								}
+							}
+						]
+					}
+				}
+			}
+		]
+	}
+}

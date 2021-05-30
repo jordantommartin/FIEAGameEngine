@@ -1,0 +1,67 @@
+{
+	"Name": {
+		"type": "string",
+		"value": "Test World"
+	},
+	"Children": {
+		"type": "table",
+		"value": [
+			{
+				"class": "Entity",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Sector 1"
+					}
+				}
+			},
+			{
+				"class": "Entity",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Sector 2"
+					},
+					"Children": {
+						"type": "table",
+						"value": [
+							{
+								"type": "table",
+								"class": "Avatar",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Crazy Cool Avatar Man"
+									},
+									"HitPoints": {
+										"type": "integer",
+										"value": 250
+									}
+								}
+							},
+							{
+								"type": "table",
+								"class": "Entity",
+								"value": {
+									"Name": {
+										"type": "string",
+										"value": "Special Entity #2"
+									}
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"class": "Entity",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Sector 3"
+					}
+				}
+			}
+		]
+	}
+}

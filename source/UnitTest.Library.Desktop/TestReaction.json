@@ -1,0 +1,53 @@
+{
+	"Name": {
+		"type": "string",
+		"value": "Test Reaction"
+	},
+	"Subtype": {
+		"type": "string",
+		"value": "Test"
+	},
+	"A": {
+		"type": "integer",
+		"value": 0
+	},
+	"Actions": {
+		"type": "table",
+		"value": [
+			{
+				"type": "table",
+				"class": "ActionList",
+				"value": {
+						"Name": {
+							"type": "string",
+							"value": "Nested Action 1"
+						}
+				}
+			},
+			{
+				"type": "table",
+				"class": "ActionIncrement",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value": "Nested Action 2"
+					},
+					"Target": {
+						"type": "string",
+						"value": "A"
+					}
+				}
+			},
+			{
+				"type": "table",
+				"class": "ActionList",
+				"value": {
+					"Name": {
+						"type": "string",
+						"value":  "Nested Action 3"
+					}
+				}
+			}
+		]
+	}
+}
